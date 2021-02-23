@@ -1,3 +1,3 @@
-# Curso Angular 2 e 4
+# Curso Angular
 Projeto voltado para o aprendizado do Framework Angular
 
