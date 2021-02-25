@@ -3,14 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { FormsModule } from '@angular/forms';
+import { MeuFormModule } from "./meu-form/meu-form.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    MeuFormModule
   ],
   exports:[
     DataBindingComponent
