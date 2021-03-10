@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'contador',
@@ -13,14 +13,18 @@ export class OutputPropertyComponent implements OnInit {
 
   //Como passar Brodcast vai EventEmitter
   @Output() mudouValor = new EventEmitter();
+  // Acessando ao DOM e ao Templete com ViewChild
+  @ViewChild('campoInput', { static: true }) campoValorInput: ElementRef;
 
   incrementa(){
-    this.valor++;
+    //this.valor++;
+    this.campoValorInput.nativeElement.value++;
     this.mudouValor.emit({novoValor: this.valor});
   }
 
   decrementa(){
-    this.valor--;
+    //this.valor--
+    this.campoValorInput.nativeElement.value--;
     this.mudouValor.emit({novoValor: this.valor});
   }
 
