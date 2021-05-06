@@ -13,7 +13,8 @@ export class MeuFormComponent implements OnInit {
     nome: 'Enivaldo',
     idade: 25,
     end: {
-      rua: 'Rua 12'
+      rua: 'Rua 12',
+      bairro: 'Vista bela Hall'
     }
   }
 

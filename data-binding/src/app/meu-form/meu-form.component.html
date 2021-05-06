@@ -1,3 +1,5 @@
+
+<!--Two-way data binding no Angular-->
 <section class="two-way-binding">
 
     <article>
@@ -24,9 +26,11 @@
 
         <div>
             <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade</p>
+            <p>Moro no bairro {{ pessoa.end.bairro }} na rua {{ pessoa.end.rua }}</p>
             <input type="text" [(ngModel)]="pessoa.nome">
             <input type="text" [(ngModel)]="pessoa.idade">
             <input type="text" [(ngModel)]="pessoa.end.rua">
+            <input type="text" [(ngModel)]="pessoa.end.bairro">
         </div>
     </article>
 
