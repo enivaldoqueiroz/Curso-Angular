@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { DiretivasNgifComponent } from './diretivas-ngif/diretivas-ngif.component';
 import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
 import { DiretivaNgForComponent } from './diretiva-ng-for/diretiva-ng-for.component';
+import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DiretivasNgifComponent,
     DiretivaNgswitchComponent,
-    DiretivaNgForComponent
+    DiretivaNgForComponent,
+    DiretivaNgclassComponent
   ],
   imports: [
     BrowserModule

@@ -1,18 +1,18 @@
 <h5>*ngIf</h5>
 
-<div *ngIf="cursos.length > 0" >
+<div *ngIf="cursos.length > 0">
     Lista de cursos aqui.
 </div>
 
-<div *ngIf="cursos.length == 0" >
+<div *ngIf="cursos.length == 0">
     Não existem cursos para serem listados.
 </div>
 
-<div *ngIf="mostrarCursos" >
+<div *ngIf="mostrarCursos">
     Lista de cursos aqui.
 </div>
 
-<div *ngIf="!mostrarCursos" >
+<div *ngIf="!mostrarCursos">
     Não existem cursos para serem listados.
 </div>
 
@@ -20,10 +20,28 @@
 <button (click)="onMostraCursos()">Motrar ou esconder cursos</button>
 
 <h5>hidden como alternativa</h5>
-<div [hidden]="!mostrarCursos" >
+<div [hidden]="!mostrarCursos">
     Lista de cursos aqui.
 </div>
 
-<div [hidden]="mostrarCursos" >
+<div [hidden]="mostrarCursos">
     Não existem cursos para serem listados.
 </div>
+
+<!-- 
+Como o *ngIF é trabalhando por de baixo dos panos no Angular 
+
+<div *ngIf="mostrarCursos" >
+    Lista de cursos aqui.
+</div>
+
+<h3>Removendo o * e usundo template</h3>
+<template [ngIf]="!mostrarCursos">
+    <div>Lista de cursos aqui.</div>
+</template>
+
+<div template="ngIf" mostrarCuros>
+    Lista de cursos aqui.
+</div>
+
+-->
