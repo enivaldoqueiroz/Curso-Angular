@@ -1,0 +1,7 @@
+<p>Descrição: {{ tarefa.desc }}</p>
+<!-- <p>Responsável: {{ tarefa.resposavel.nome }}</p> -->
+<!--1ª forma de trata o não aparecimento da tag na tela-->
+<p>Responsável: {{ tarefa.resposavel !=null ? tarefa.responsavel.nome : ''}}</p>
+
+<!--2ª forma de trata o não aparecimento da tag na tela usundo o operador elvis-->
+<p>Responsável: {{ tarefa.resposavel?.usuario?.nome }}</p>
